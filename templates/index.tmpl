@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .title }}</title>
+</head>
+<body>
+    {{ if .title }}
+    <h1>{{ .title }}</h1>
+    {{ else }}
+    <h1>MinePass</h1>
+    {{ end }}
+
+    <form id="whitelistForm" method="POST" action="api/whitelist/add">
+        <input type="text" placeholder="Username" name="username" required>
+        <input type="submit" onclick="whitelistUser(event)">
+    </form>
+
+    <script src="/assets/main.js"></script>
+</body>
+</html>
