@@ -44,6 +44,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Feedback and Support
 
-If you encounter any issues or have suggestions for improving MinePass, please open an issue on the [GitHub repository](https://github.com/yourusername/minepass/issues).
+If you encounter any issues or have suggestions for improving MinePass, please open an issue on the [GitHub repository](https://github.com/gabefraser/minepass/issues).
 
 We hope you find MinePass to be a valuable tool for managing your Minecraft server's whitelist. Happy gaming!
