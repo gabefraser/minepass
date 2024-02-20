@@ -31,6 +31,29 @@
     gabefraser/minepass:latest
     ```
 
+## Usage
+There are 2 ways you can communicate with this.
+
+### Via the Web UI
+Once the Docker image is up and running, head over to `0.0.0.0:8080` (your IP will differ depending if you're self hosting on your machine/dedicated server).
+
+![Web UI](https://i.imgur.com/FdcXrVy.png) 
+
+### Via the Web API
+There are currently 2 endpoints available. You can find them below.
+
+Each endpoint requires the following header as this is used to validate the request is coming from a trusted source.
+```json
+{
+    "X-Api-Key": "YOUR_UI_PASSWORD"
+}
+```
+
+| **URL**              | **Method** | **Body**                 |
+|----------------------|------------|--------------------------|
+| api/whitelist/add    | POST       | { "username": "string" } |
+| api/whitelist/remove | POST       | { "username": "string" } |
+
 ## Credits
 
 MinePass is made possible thanks to the contributions and support from the following individuals and projects:
