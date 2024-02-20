@@ -23,9 +23,9 @@
    placeholders with your configuration.
     ```shell
    docker run -d \
-    -e MP_HOSTNAME=YOUR_SERVER_IP \
-    -e MP_PASSWORD=YOUR_SERVER_RCON_PASSWORD \
-    -e MP_UI_PASSWORD=YOUR_UI_PASSWORD \
+    -e MP_HOSTNAME=YOUR_SERVER_IP \ # required
+    -e MP_PASSWORD=YOUR_SERVER_RCON_PASSWORD \ # required
+    -e MP_UI_PASSWORD=YOUR_UI_PASSWORD \ # required
     -e MP_TITLE=YOUR_TITLE \ # optional, will default to "MinePass"
     -p 8080:8080 \
     gabefraser/minepass:latest
